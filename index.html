@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>weight on different planets</title>
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet" />
+    </head>
+    <body class="grid">
+        <nav class="nav gridBox"><h1>What would you weigh on Mars?</h1></nav>
+        <div class="sideBar gridBox">
+            <h2>Input your weight here:</h2>
+            <div class="planet">
+                <label for="weight">Your weight:</label>
+                <input type="text" id="weight" name="weight" />
+            </div>
+            <br />
+            <div class="planet">
+                <label for="sun">The sun:</label>
+                <input type="text" id="sun" name="sun" />
+            </div>
+            <div class="planet">
+                <label for="Mercury">Mercury:</label>
+                <input type="text" id="mercury" name="Mercury" />
+            </div>
+            <div class="planet">
+                <label for="venus">Venus:</label>
+                <input type="text" id="venus" name="venus" />
+            </div>
+            <div class="planet">
+                <label for="moon">The moon:</label>
+                <input type="text" id="moon" name="moon" />
+            </div>
+            <div class="planet">
+                <label for="mars">Mars:</label>
+                <input type="text" id="mars" name="mars" />
+            </div>
+            <div class="planet">
+                <label for="jupiter">Jupiter:</label>
+                <input type="text" id="jupiter" name="jupiter" />
+            </div>
+            <div class="planet">
+                <label for="saturn">Saturn:</label>
+                <input type="text" id="saturn" name="saturn" />
+            </div>
+            <div class="planet">
+                <label for="uranus">Uranus:</label>
+                <input type="text" id="uranus" name="uranus" />
+            </div>
+            <div class="planet">
+                <label for="neptune">Neptune:</label>
+                <input type="text" id="neptune" name="neptune" />
+            </div>
+            <div class="planet">
+                <label for="pluto">Pluto:</label>
+                <input type="text" id="pluto" name="pluto" />
+            </div>
+
+            <button onclick="calculateWeights()">Calculate Weights</button>
+        </div>
+        <div class="main gridBox">
+            <h2>
+                Have you ever wondered how much you would weigh on other planets
+                in our solar system?
+            </h2>
+            <p>
+                The Weight Calculator on our website provides an exciting and
+                informative way to explore this cosmic curiosity. By inputting
+                your Earth weight, you can discover how your mass compares on
+                planets like Mars, Jupiter, and even the dwarf planet Pluto.
+                Let's embark on a celestial journey to unveil the mysteries of
+                your weight in the vastness of space. Understanding Weight and
+                Mass: Before we delve into the calculations, it's essential to
+                distinguish between weight and mass. While mass is a measure of
+                the amount of matter in an object, weight is the force exerted
+                on that mass due to gravity. On Earth, gravity determines our
+                weight, but on other celestial bodies, where gravitational
+                forces differ, our weight will vary accordingly.
+            </p>
+            <p>
+                Before we delve into the calculations, it's essential to
+                distinguish between weight and mass. While mass is a measure of
+                the amount of matter in an object, weight is the force exerted
+                on that mass due to gravity. On Earth, gravity determines our
+                weight, but on other celestial bodies, where gravitational
+                forces differ, our weight will vary accordingly. On Earth, the
+                force of gravity pulls objects toward the center of the planet.
+                The weight of an object is directly proportional to its mass and
+                the strength of the gravitational field it is subjected to. As
+                we step away from Earth and explore other planets, each
+                celestial body has its own unique gravitational force,
+                influencing the weight of an object differently. Gravity is
+                described by Isaac Newton's law of universal gravitation, which
+                states that every point mass attracts every other point mass in
+                the universe with a force that is directly proportional to the
+                product of their masses and inversely proportional to the square
+                of the distance between their centers.
+            </p>
+            <p>
+                Now, as we consider calculating your weight on different
+                planets, it's important to note that weight is not constant
+                throughout the solar system. Each planet's mass, size, and
+                distance from the Sun contribute to its unique gravitational
+                pull, which directly affects your weight. The Weight Calculator
+                on our website takes these gravitational variations into
+                account, offering you an opportunity to experience the diversity
+                of gravitational forces within our solar system. By inputting
+                your Earth weight, you can witness firsthand how this
+                fundamental force of nature manifests itself on Mars, Jupiter,
+                Venus, and more. Embark on this celestial journey with us, and
+                let the Weight Calculator be your guide to unraveling the
+                mysteries of your weight in the vastness of space. As we explore
+                the implications of gravity on different planets, we gain a
+                deeper appreciation for the intricate dance of forces that
+                shapes our cosmic neighborhood. So, without further ado, let's
+                set sail on a journey through the cosmos, discovering the
+                nuances of weight and mass on planets far beyond our own.
+            </p>
+        </div>
+        <div class="content1 gridBox">
+            <div class="content1Text">
+                <h2>The Weight Calculator:</h2>
+                <p>
+                    Our user-friendly Weight Calculator is designed to provide
+                    you with instant insights into your weight on different
+                    planets. Here's how it works:
+                </p>
+                <br />
+                <ol>
+                    <li>Input your Earth weight in pounds or kilograms.</li>
+                    <li>
+                        Click the "Calculate" button to unveil your weight on
+                        the chosen celestial body.
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="content2 gridBox">
+            <h2>Exploring Your Weight Across the Solar System:</h2>
+            <ul>
+                <li>
+                    <b>Mars:</b> Mars, the red planet, has a weaker
+                    gravitational pull than Earth. As a result, you'll weigh
+                    less on Mars compared to your weight on Earth.
+                </li>
+                <li>
+                    <b>Jupiter:</b> Jupiter, the largest planet in our solar
+                    system, boasts a massive gravitational force. Prepare to
+                    experience a significant increase in weight when you step
+                    onto this gas giant.
+                </li>
+                <li>
+                    <b>Venus:</b> Venus, the hot and tumultuous neighbor of
+                    Earth, has a gravity similar to our planet. Expect your
+                    weight on Venus to be relatively close to your Earth weight.
+                </li>
+                <li>
+                    <b>Mercury:</b> Mercury, the closest planet to the Sun, has
+                    a weaker gravitational pull. Your weight on Mercury will be
+                    less than what you're accustomed to on Earth.
+                </li>
+                <li>
+                    <b>Saturn:</b> Saturn, famous for its stunning rings, has a
+                    gravitational force that is slightly stronger than Earth's.
+                    You may find yourself feeling a bit heavier on this ringed
+                    giant.
+                </li>
+                <li>
+                    <b>Uranus and Neptune:</b> As you venture towards the outer
+                    reaches of our solar system, Uranus and Neptune will subject
+                    you to weaker gravitational forces, resulting in a decrease
+                    in your weight compared to Earth
+                </li>
+            </ul>
+        </div>
+        <footer class="footer gridBox">
+            <p>
+                Our Weight Calculator offers a fun and educational way to
+                explore the impact of gravity on your mass across the solar
+                system. Whether you're planning a hypothetical space trip or
+                simply satisfying your curiosity, this tool provides a
+                fascinating glimpse into the cosmic scales. So, why not take a
+                moment to calculate your weight on different planets and marvel
+                at the celestial variations that make our universe so diverse?
+                Step into the cosmos and discover the wonders of your weight on
+                otherworldly landscapes.
+            </p>
+        </footer>
+        <script>
+            function calculateWeights() {
+                // Get the input value
+                var earthWeight = parseFloat(
+                    document.getElementById("weight").value
+                );
+
+                // Gravity constants for each planet (relative to Earth's gravity)
+                var gravityConstants = {
+                    sun: 27.01,
+                    moon: 0.166,
+                    mars: 0.38,
+                    jupiter: 2.34,
+                    venus: 0.91,
+                    mercury: 0.38,
+                    saturn: 1.06,
+                    uranus: 0.92,
+                    neptune: 1.19,
+                    pluto: 0.06,
+                };
+
+                // Calculate weight on each planet
+                document.getElementById("mars").value =
+                    (earthWeight * gravityConstants["mars"]).toFixed(2) + " kg";
+                document.getElementById("jupiter").value =
+                    (earthWeight * gravityConstants["jupiter"]).toFixed(2) +
+                    " kg";
+                document.getElementById("venus").value =
+                    (earthWeight * gravityConstants["venus"]).toFixed(2) +
+                    " kg";
+                document.getElementById("mercury").value =
+                    (earthWeight * gravityConstants["mercury"]).toFixed(2) +
+                    " kg";
+                document.getElementById("saturn").value =
+                    (earthWeight * gravityConstants["saturn"]).toFixed(2) +
+                    " kg";
+                document.getElementById("uranus").value =
+                    (earthWeight * gravityConstants["uranus"]).toFixed(2) +
+                    " kg";
+                document.getElementById("neptune").value =
+                    (earthWeight * gravityConstants["neptune"]).toFixed(2) +
+                    " kg";
+                document.getElementById("sun").value =
+                    (earthWeight * gravityConstants["sun"]).toFixed(2) + " kg";
+                document.getElementById("moon").value =
+                    (earthWeight * gravityConstants["moon"]).toFixed(2) + " kg";
+                document.getElementById("pluto").value =
+                    (earthWeight * gravityConstants["pluto"]).toFixed(2) +
+                    " kg";
+            }
+        </script>
+    </body>
+</html>

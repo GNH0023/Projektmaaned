@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(./img/darkness.png);
+    background-repeat: repeat;
+    color: aliceblue;
+    font-family: "Roboto", sans-serif;
+}
+p {
+    margin-top: 10px;
+}
+.grid {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.5fr 0.5fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas:
+        "nav nav nav nav nav nav"
+        ". sideBar main main main ."
+        ". sideBar content1 content2 content2 ."
+        ". sideBar footer footer footer .";
+    grid-gap: 0.5rem;
+}
+.gridBox {
+    background-color: #3b3b3b;
+    border-radius: 10px;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: nav;
+    background-color: #3b3b3b;
+    border-radius: 0px;
+}
+.sideBar {
+    grid-area: sideBar;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.main {
+    grid-area: main;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.content1 {
+    grid-area: content1;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    min-width: 300px;
+}
+.content1Text {
+    margin-top: 10px;
+}
+.content2 {
+    grid-area: content2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px;
+}
+.footer {
+    grid-area: footer;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.planet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0.2rem 0 0.2rem;
+}
+
+.planet label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.planet input {
+    text-align: end;
+    padding: 8px;
+    width: 150px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0.5rem 0.2rem 0 0.2rem;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@media only screen and (max-width: 1000px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: ;
+        grid-template-areas:
+            "nav"
+            "sideBar"
+            "content1"
+            " main "
+            "content2"
+            "footer";
+    }
+}
